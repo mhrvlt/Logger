@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Quote Logger</title>
+<style>
+	body {
+	    background-color: #455a64;
+	}
+	
+	h1{
+	    text-align: center;
+	    color: #90a4ae;
+	}
+	
+	#form{
+	    width: 300px;
+	    background-color: #90a4ae;
+	    padding: 20px;
+	    margin: 0 auto;
+	}
+	
+	#submit{
+		padding: 6px 10px 7px !important;
+		background-color: #455a64;
+		font-weight: bold;
+		color: #ffffff;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 10px;
+		border: 1px solid #455a64;
+		cursor: pointer;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+		-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	}
+</style>
+</head>
+<body>
+	<h1>QuoteLogger</h1>
+	<div id="form">
+		<form action="LoggerSevlet" method="get">
+			SubmissionID : <input type="text" name="id" required="required" /><br /> <br /> 
+			Select Environment :<br /> <br /> 
+			<input type="radio" name="env"value="MRPA_LOCAL" required="required"/>MRPA_LOCAL<br /> 
+			<input type="radio" name="env" value="MRPA_QA1" />MRPA_QA1<br /> 
+			<input type="radio"	name="env" value="MRPA_QA2" />MRPA_QA2<br /> <br /> 
+			<input type="radio" name="env" value="ARPA_LOCAL" />ARPA_LOCAL<br /> 
+			<input type="radio" name="env" value="ARPA_QA1" />ARPA_QA1<br />
+			<input type="radio" name="env" value="PROD" />PROD<br/><br/>
+			<input id="submit" type="submit" />
+		</form>
+	</div>
+
+</body>
+
+</html>

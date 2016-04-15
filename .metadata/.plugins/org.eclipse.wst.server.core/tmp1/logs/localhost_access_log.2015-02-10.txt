@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [10/Feb/2015:10:20:49 -0800] "GET /Logger/LoggerSevlet?id=CAQ3900000692&env=ARPA_QA1_clone1 HTTP/1.1" 500 2030
+0:0:0:0:0:0:0:1 - - [10/Feb/2015:10:22:22 -0800] "GET /Logger/LoggerSevlet?id=CAQ3900001736&env=ARPA_QA1_clone1 HTTP/1.1" 200 23364
+0:0:0:0:0:0:0:1 - - [10/Feb/2015:11:07:01 -0800] "GET /Logger/LoggerSevlet?id=CAQ3900001737&env=ARPA_QA1_clone2 HTTP/1.1" 200 23334
+0:0:0:0:0:0:0:1 - - [10/Feb/2015:11:15:48 -0800] "GET /Logger/LoggerSevlet?id=CAQ0000021836&env=ARPA_LOCAL HTTP/1.1" 200 170202

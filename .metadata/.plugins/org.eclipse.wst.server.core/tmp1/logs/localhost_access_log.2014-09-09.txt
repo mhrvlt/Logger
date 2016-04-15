@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [09/Sep/2014:15:35:46 -0700] "GET /Logger/LoggerSevlet?id=CAQ0000004147&env=ARPA_QA1 HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [09/Sep/2014:15:36:02 -0700] "GET /Logger/LoggerSevlet?id=CAQ0000004147&env=ARPA_LOCAL HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [09/Sep/2014:15:36:10 -0700] "GET /Logger/LoggerSevlet?id=CAQ0000004147&env=ARPA_QA1 HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [09/Sep/2014:15:36:52 -0700] "GET /Logger/LoggerSevlet?id=CAQ0000004148&env=ARPA_QA1 HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [09/Sep/2014:16:08:36 -0700] "GET /Logger/LoggerSevlet?id=CAQ0000004158&env=ARPA_QA1 HTTP/1.1" 200 75

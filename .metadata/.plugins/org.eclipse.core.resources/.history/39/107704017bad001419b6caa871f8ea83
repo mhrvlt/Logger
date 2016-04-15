@@ -1,0 +1,130 @@
+package utils;
+
+import constants.LoggerConstants;
+
+public class ServerManager {
+	
+	public String SERVERNAME;
+	public String USERNAME;
+	public String PASSWORD;
+	public int PORT;
+	public String REMOTE_DIR;
+	
+
+	public String getREMOTE_DIR() {
+		return REMOTE_DIR;
+	}
+
+	public void setREMOTE_DIR(String rEMOTE_DIR) {
+		REMOTE_DIR = rEMOTE_DIR;
+	}
+
+	public String getSERVERNAME() {
+		return SERVERNAME;
+	}
+
+	public void setSERVERNAME(String sERVERNAME) {
+		SERVERNAME = sERVERNAME;
+	}
+
+	public String getUSERNAME() {
+		return USERNAME;
+	}
+
+	public void setUSERNAME(String uSERNAME) {
+		USERNAME = uSERNAME;
+	}
+
+	public String getPASSWORD() {
+		return PASSWORD;
+	}
+
+	public void setPASSWORD(String pASSWORD) {
+		PASSWORD = pASSWORD;
+	}
+
+	public int getPORT() {
+		return PORT;
+	}
+
+	public void setPORT(int pORT) {
+		PORT = pORT;
+	}
+
+	
+	public void setEnvironmentDetails(String env){
+		if(env.equalsIgnoreCase("PROD")){
+			setPROD();
+		}else if(env.equalsIgnoreCase("MRPA_QA1")){
+			setMRPA_QA1();
+		}else if(env.equalsIgnoreCase("MRPA_QA2")){
+			setMRPA_QA2();
+		}else if(env.equalsIgnoreCase("ARPA_QA1_clone1")){
+			setARPA_QA1_clone1();
+		}else if(env.equalsIgnoreCase("ARPA_QA1_clone2")){
+			setARPA_QA1_clone2();
+		}else if(env.equalsIgnoreCase("ARPA_QA2_clone1")){
+			setARPA_QA2_clone1();
+		}else if(env.equalsIgnoreCase("ARPA_QA2_clone2")){
+			setARPA_QA2_clone2();
+		}
+		
+	}
+	
+	public void setPROD(){
+		this.setSERVERNAME(LoggerConstants.PROD_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.PROD_REMOTE_DIR);
+	}
+	
+	public void setMRPA_QA1(){
+		this.setSERVERNAME(LoggerConstants.MRPA_QA1_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.MRPA_QA1_REMOTE_DIR);
+	}
+	
+	public void setMRPA_QA2(){
+		this.setSERVERNAME(LoggerConstants.MRPA_QA2_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.MRPA_QA2_REMOTE_DIR);
+	}
+	
+	public void setARPA_QA1_clone1(){
+		this.setSERVERNAME(LoggerConstants.ARPA_QA1_clone1_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.ARPA_QA1__clone1_REMOTE_DIR);
+	}
+	
+	public void setARPA_QA1_clone2(){
+		this.setSERVERNAME(LoggerConstants.ARPA_QA1_clone2_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.ARPA_QA1_clone2_REMOTE_DIR);
+	}
+	
+	public void setARPA_QA2_clone1(){
+		this.setSERVERNAME(LoggerConstants.ARPA_QA2_clone1_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.ARPA_QA2_clone1_REMOTE_DIR);
+	}
+	
+	public void setARPA_QA2_clone2(){
+		this.setSERVERNAME(LoggerConstants.ARPA_QA2_clone2_NAME);
+		this.setUSERNAME(LoggerConstants.SERVER_USERNAME);
+		this.setPASSWORD(LoggerConstants.SERVER_PASSWORD);
+		this.setPORT(LoggerConstants.SERVER_PORT);
+		this.setREMOTE_DIR(LoggerConstants.ARPA_QA2_clone2_REMOTE_DIR);
+	}
+	
+}
